@@ -7,7 +7,9 @@ be informed that this plugin is highly in experimental state.
 ## Usage
 
   $('.classname').thaana();
+  
   $('#elementId').thaana();
+  
   $('elementname').thaana();
   
 **To change default keyboard layout:**
