@@ -11,9 +11,13 @@ be informed that this plugin is highly in experimental state.
   $('elementname').thaana();
   
 **To change default keyboard layout:**
+
 **Default**
+
   $('.thaana').thaana({keyboard: 'phonetic'});
+  
 or
+
   $('.thaana').thaana({keyboard: 'typewriter'});
 
 ## Notice
