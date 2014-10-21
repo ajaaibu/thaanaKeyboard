@@ -21,6 +21,10 @@ be informed that this plugin is highly in experimental state.
 or
 
   $('.thaana').thaana({keyboard: 'typewriter'});
+  
+** JSFIDDLE **
+
+http://jsfiddle.net/yojuhw57/
 
 ## Notice
 
