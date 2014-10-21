@@ -22,7 +22,7 @@ or
 
   $('.thaana').thaana({keyboard: 'typewriter'});
   
-** JSFIDDLE **
+**JSFIDDLE**
 
 http://jsfiddle.net/yojuhw57/
 
