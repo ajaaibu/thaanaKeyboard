@@ -22,13 +22,18 @@ or
 
   $('.thaana').thaana({keyboard: 'typewriter'});
   
-**JSFIDDLE**
+**Update: 2015/05/12**
 
-http://jsfiddle.net/yojuhw57/
+Fixes the "undefined" ammendement to the input element while spacing.
+
+Fixed the bug that kept transforming the character if you pasted just one alphabet.
+
+Added demonstration page, check test/demo.html. (removed JSFiddle url since I got frustrated when it repeated froze my browser)
+
+**More Issues?**
+
+Yeah there is a known bug that occurs if you pasted something like url or an email address and attempt on deleting it on chrome on mobile devices. But I'll keep it for a later update ;)
 
 ## Notice
 
-Compatibility with mobile browsers, especially Android browsers are achieved by sacrificing keyboard event, as some browsers does not fire events as how it should. There might be issues while pasting,
-line breaks and backspacing. Mostly in Chrome.
-
-Working on alternatives for further improvement ;)
+Shoot any bugs to @ajaaibu, i'll add it up to the next update (no guarantee when)
