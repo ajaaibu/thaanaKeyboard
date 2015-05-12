@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <title>Thaana Keyboard - Test Page</title>
+  <meta charset="utf-8"/>
+  <head>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+    @font-face{
+      font-family: MVFaseyha;
+      src: url('./fonts/MV_Faseyha.otf');
+    }
+    .thaana{
+      font-family: MVFaseyha;
+      direction:rtl;
+      text-align:right;
+      width:500px;
+      font-size:12pt;
+    }
+    </style>
+  </head>
+  <body>
+    <textarea class="thaana"></textarea>
+
+    <script type="text/javascript" src="../jquery.thaana.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.thaana').thaana();
+    });
+    </script>
+  </body>
+</html>
