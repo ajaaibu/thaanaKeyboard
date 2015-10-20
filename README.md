@@ -22,6 +22,10 @@ or
 
   $('.thaana').thaana({keyboard: 'typewriter'});
   
+**Update: 2015/10/20**
+
+  * Fixed the bug while editing in between lines / characters.
+  
 **Update: 2015/05/12**
 
   * Fixes the "undefined" ammendement to the input element while spacing.
