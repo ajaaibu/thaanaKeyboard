@@ -24,11 +24,9 @@ or
   
 **Update: 2015/05/12**
 
-Fixes the "undefined" ammendement to the input element while spacing.
-
-Fixed the bug that kept transforming the character if you pasted just one alphabet.
-
-Added demonstration page, check test/demo.html. (removed JSFiddle url since I got frustrated when it repeated froze my browser)
+  * Fixes the "undefined" ammendement to the input element while spacing.
+  * Fixed the bug that kept transforming the character if you pasted just one alphabet.
+  * Demonstration page is moved to [here](http://ajaaibu.github.io/thaanaKeyboard)
 
 **More Issues?**
 
@@ -36,4 +34,4 @@ Yeah there is a known bug that occurs if you pasted something like url or an ema
 
 ## Notice
 
-Shoot any bugs to @ajaaibu, i'll add it up to the next update (no guarantee when)
+Shoot any bugs to [@ajaaibu](https://twitter.com/ajaaibu), i'll add it up to the next update (no guarantee when)
