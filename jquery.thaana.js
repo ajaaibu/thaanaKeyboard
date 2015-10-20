@@ -1,10 +1,10 @@
 /*
- * jQuery Thaana Keyboard Handler v1.3
+ * jQuery Thaana Keyboard Handler v1.4
  * http://twitter.com/ajaaibu
  * requires jquery v1.11.1+
  *
  * Copyright 2015, Ahmed Ali (ajaaibu)
- * Last Updated: 2015/05/12 22:48 PM
+ * Last Updated: 2015/10/20 05:41 PM
  *
  * Dual licensed under the MIT or GPL Version 2 licenses.
  *
@@ -38,15 +38,36 @@
       var handleKeyboardInput = function(){
         
         var str = $(this).val(),
-        key = str.substring(str.length-1),
-        k = key.charCodeAt(0),
+        key,
+        selectionMode = false,
+        selectionStart = 0;
+        
+        if(this.selectionEnd < str.length && this.selectionEnd > 0){
+          selectionMode = true;
+          selectionStart = this.selectionEnd;
+          key = str.substring(this.selectionEnd-1,this.selectionEnd);
+        }
+        else{
+          key = str.substring(str.length-1);
+        }
+
+        var k = key.charCodeAt(0),
         lastLength = $(this).attr('data-length') ? $(this).attr('data-length') : 0,
         diff = str.length - lastLength;
           
         if((typeof(keyboards[settings.keyboard][k]) != "undefined") && (diff == 1 ||  str.length < lastLength)){
+          if(selectionMode == true){
+            current = $(this).val().substr(0,this.selectionStart-1) + keyboards[settings.keyboard][k] + $(this).val().substr(this.selectionStart);
+          }
+          else{
             current = $(this).val().substr(0,str.length-1);
             current += keyboards[settings.keyboard][k];
+          }
             $(this).val(current);
+            if(selectionMode){
+            this.selectionStart = selectionStart;
+            this.selectionEnd = selectionStart;
+            }
         }
       };
 
@@ -55,6 +76,7 @@
           $(this).off('input');
         }
         else{
+
           if(typeof($._data(this,'events')['input']) == "undefined"){
             $(this).on('input',handleKeyboardInput);
           }
