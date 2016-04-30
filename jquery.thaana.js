@@ -68,6 +68,7 @@
             this.selectionStart = selectionStart;
             this.selectionEnd = selectionStart;
             }
+            $(this).trigger('change');
         }
       };
 
