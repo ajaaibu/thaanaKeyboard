@@ -5,23 +5,23 @@ jQuery Plugin to manipulate thaana keyboard. Supports mobile platforms such as a
 be informed that this plugin is highly in experimental state.
 
 ## Usage
-
+```js
   $('.classname').thaana();
   
   $('#elementId').thaana();
   
   $('elementname').thaana();
-  
+```
 **To change default keyboard layout:**
 
 **Default**
-
+```js
   $('.thaana').thaana({keyboard: 'phonetic'});
-  
+```
 or
-
+```js
   $('.thaana').thaana({keyboard: 'typewriter'});
-  
+```
 **Update: 2015/10/20**
 
   * Fixed the bug while editing in between lines / characters.
